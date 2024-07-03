@@ -1,4 +1,4 @@
-package TddInPracticeJava;
+package TddPracticeInJava;
 
 public class StringCalculator{
 
