@@ -1,19 +1,10 @@
 package CodeTestCoverJava;
 
 import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 
 public class StringCalculatorTest {
-
-    @Test
-    public void testEmptyString() {
-       //  assertTrue(Soundex.generateSoundex("")=="");
-    }
-
-    @Test
-    public void testSingleCharacter() {
-         //assertTrue(Soundex.generateSoundex("A")=="A000");
-    }
 
     
     @Test
@@ -24,7 +15,7 @@ public class StringCalculatorTest {
         StringCalculator objUnderTest = new StringCalculator();
         int result = objUnderTest.add(input);
 
-       assertTrue(expectedResult==result);
+       assertEquals(expectedResult,result);
     }
 
   @Test
@@ -34,7 +25,7 @@ public class StringCalculatorTest {
         String input = "0";
         StringCalculator objUnderTest = new StringCalculator();
         int result = objUnderTest.Add(input);
-        assertTrue(expectedResult==result);
+       assertEquals(expectedResult,result);
 
     }
 
@@ -45,7 +36,7 @@ public class StringCalculatorTest {
         String input = "1,2";
         StringCalculator objUnderTest = new StringCalculator();
         int result = objUnderTest.Add(input);
-        assertTrue(expectedResult==result);
+        assertEquals(expectedResult,result);
     }
 
    @Test
@@ -55,7 +46,7 @@ public class StringCalculatorTest {
         String input = "1\n2,3";
         StringCalculator objUnderTest = new StringCalculator();
         int result = objUnderTest.Add(input);
-        assertTrue(expectedResult==result);
+         assertEquals(expectedResult,result);
     }
 
  
@@ -66,7 +57,7 @@ public class StringCalculatorTest {
         StringCalculator objUnderTest = new StringCalculator();
         int result = objUnderTest.Add(input);
 
-        assertTrue(expectedResult==result);
+       assertEquals(expectedResult,result);
     }
     @Test
     public void ExpectSumWithCustomDelimiter()
@@ -76,6 +67,6 @@ public class StringCalculatorTest {
         StringCalculator objUnderTest = new StringCalculator();
         int result = objUnderTest.Add(input);
 
-       assertTrue(expectedResult==result);
+      assertEquals(expectedResult,result);
     }
 }
