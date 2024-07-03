@@ -1,4 +1,4 @@
-package CodeTestCoverJava;
+package TddPracticeInJava;
 
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
